@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Shopper</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+       <div class="header__top">
+        <a href="#" class="header__logo">
+          <span class="green">Shop</span>per
+        </a>
+        <div class="header__search search">
+          <input class="search__input" type="text" placeholder="Search Items">
+          <button class=" search__btn">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="38" height="38" rx="5" fill="currentColor"/>
+              <path d="M27.9935 25.7563L24.0219 21.7847C25.022 20.5177 25.6249 18.9226 25.6249 17.1875C25.6249 13.0864 22.2885 9.75 18.1874 9.75C14.0863 9.75 10.7499 13.0864 10.7499 17.1875C10.7499 21.2886 14.0863 24.625 18.1874 24.625C19.9234 24.625 21.5176 24.023 22.7846 23.022L26.7563 26.9937C26.9269 27.1643 27.1509 27.25 27.3749 27.25C27.5989 27.25 27.8229 27.1643 27.9935 26.9937C28.3356 26.6515 28.3356 26.0985 27.9935 25.7563ZM12.4999 17.1875C12.4999 14.0515 15.0514 11.5 18.1874 11.5C21.3234 11.5 23.8749 14.0515 23.8749 17.1875C23.8749 20.3235 21.3234 22.875 18.1874 22.875C15.0514 22.875 12.4999 20.3235 12.4999 17.1875Z" fill="white"/>
+            </svg>  
+          </button>
+        </div>
+        <div class="header__actions">
+          <a href="#" class="header__actions-btn header__actions-btn--cart">0 items added</a>
+          <a href="#" class="header__actions-btn header__actions-btn--login">Login or Sign Up</a>
+        </div>
+       </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Features</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Products</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+       </div>
+    </header>
+    <main class="page">
+      <section class="latest-products">
+        <div class="container latest-products__container">
+          <div class="latest-products__content">
+            <h2 class="latest-products__title">
+              Discover Our Latest Products
+            </h2>
+            <p class="latest-products__content-txt">
+              Lorem ipsum is a placeholder text commonly used <br> to demonstrate the visual form of a product
+            </p>
+            <a href="#" class="btn latest-products__btn">
+              Buy Now
+            </a>
+            <div class="page__reviews-wrapper reviews">
+              <ul class="reviews__list">
+                <li class="reviews__items reviews__items--img1"></li>
+                <li class="reviews__items reviews__items--img2"></li>
+                <li class="reviews__items reviews__items--img3"></li>
+                <li class="reviews__items reviews__items--img4"></li>
+              </ul>
+              <span>
+                15k well </br> reviews
+              </span>
+            </div>
+          </div>
+          <div class="latest-products__decoration">
+            <div class="latest-products__play play">
+              <a href="#" class="play__btn">
+                <img src="/assets/img/play-btn.png" alt="Конпка видео">
+                <span>Play Video</span>
+              </a>
+            </div>
+            <div class="latest-products__star-column">
+              <div class="latest-products__star"></div>
+            </div>
+            <div class="latest-products__img-column">
+              <svg class="latest-products__img-title" width="322" height="206" viewBox="0 0 322 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.6418 204.045L0.685057 205.601L0.0449455 194.099C-0.0928562 191.623 0.188728 189.484 0.889698 187.682C1.58918 185.854 2.65777 184.419 4.09545 183.377C5.53314 182.336 7.27706 181.758 9.32722 181.644C11.3774 181.53 13.1746 181.911 14.719 182.786C16.2368 183.663 17.4447 184.971 18.3427 186.711C19.2126 188.425 19.7165 190.52 19.8543 192.997L20.3344 201.623L17.8491 199.438L28.3529 198.853L28.6418 204.045ZM27.6238 185.754L17.8729 193.387L17.564 187.836L27.3127 180.162L27.6238 185.754ZM18.4082 199.407L16.061 201.861L15.5942 193.474C15.4668 191.184 14.8787 189.494 13.8298 188.404C12.7795 187.288 11.3757 186.778 9.61838 186.876C7.83448 186.975 6.49586 187.637 5.60254 188.862C4.70774 190.06 4.32405 191.804 4.45148 194.094L4.91823 202.481L2.23328 200.307L18.4082 199.407Z" fill="#2B2626"/>
+                <path d="M29.0168 167.004C28.7653 169.364 28.0807 171.383 26.9633 173.061C25.8221 174.709 24.3773 175.936 22.6287 176.742C20.8829 177.521 18.9626 177.799 16.8678 177.576C14.7465 177.35 12.9265 176.687 11.408 175.586C9.86571 174.456 8.71816 173.02 7.96533 171.277C7.21533 169.507 6.95339 167.562 7.17951 165.441C7.39998 163.372 8.04721 161.578 9.12119 160.056C10.1952 158.535 11.6036 157.398 13.3466 156.645C15.0895 155.892 17.0747 155.634 19.3021 155.872C19.5142 155.894 19.7514 155.933 20.0138 155.988C20.2789 156.016 20.5294 156.056 20.7653 156.108L18.8785 173.808L15.5772 173.456L17.1841 158.381L18.0105 160.441C16.7936 160.284 15.6928 160.421 14.7082 160.853C13.7236 161.284 12.9167 161.936 12.2874 162.807C11.661 163.652 11.2842 164.671 11.157 165.865C11.027 167.084 11.1776 168.187 11.609 169.171C12.0433 170.129 12.7094 170.924 13.6075 171.556C14.4819 172.159 15.5554 172.528 16.8282 172.664L17.6237 172.749C18.8965 172.885 20.0545 172.713 21.0978 172.234C22.1411 171.755 22.9845 171.014 23.6279 170.01C24.2713 169.006 24.6664 167.814 24.8134 166.435C24.9406 165.242 24.8695 164.148 24.6 163.154C24.3305 162.16 23.8376 161.249 23.1213 160.422L26.468 158.084C27.4799 159.157 28.2131 160.455 28.6675 161.979C29.0982 163.473 29.2147 165.148 29.0168 167.004Z" fill="#2B2626"/>
+                <path d="M32.9289 145.666C32.3955 147.649 31.4763 149.321 30.1713 150.682C28.8475 152.011 27.279 152.914 25.4657 153.393C23.6524 153.872 21.6771 153.824 19.5397 153.249C17.4024 152.674 15.6695 151.724 14.3411 150.4C13.0127 149.077 12.122 147.512 11.669 145.705C11.223 143.873 11.2666 141.966 11.8 139.983C12.2641 138.257 13.0659 136.816 14.2056 135.659C15.3195 134.495 16.7564 133.722 18.5162 133.339C20.276 132.957 22.3662 133.091 24.7868 133.742C27.1817 134.386 29.0607 135.306 30.4237 136.501C31.761 137.689 32.6323 139.069 33.0377 140.642C33.4431 142.215 33.4069 143.889 32.9289 145.666ZM28.9517 143.975C29.2634 142.816 29.283 141.717 29.0104 140.677C28.7447 139.612 28.1953 138.677 27.3623 137.873C26.5361 137.043 25.4664 136.452 24.153 136.098C22.814 135.738 21.5918 135.713 20.4867 136.023C19.3626 136.301 18.4184 136.834 17.654 137.622C16.8966 138.385 16.362 139.346 16.0503 140.505C15.7386 141.664 15.7155 142.776 15.9812 143.841C16.2538 144.881 16.8032 145.816 17.6293 146.646C18.4367 147.443 19.5099 148.021 20.8489 148.382C22.1622 148.735 23.3809 148.773 24.5049 148.495C25.6359 148.192 26.5801 147.659 27.3375 146.896C28.1019 146.108 28.64 145.134 28.9517 143.975ZM34.4976 138.757L29.6306 137.447L24.1975 135.779L18.6086 134.69L5.78446 131.24L7.07286 126.45L35.7341 134.16L34.4976 138.757Z" fill="#2B2626"/>
+                <path d="M40.9092 120.683L16.2952 107.336L22.5495 95.8021C24.1512 92.8485 25.9575 90.9158 27.9686 90.0043C29.9562 89.08 31.9229 89.1454 33.8686 90.2005C35.1813 90.9123 36.1413 91.8273 36.7484 92.9452C37.3322 94.0505 37.6022 95.2586 37.5586 96.5697C37.5043 97.8447 37.153 99.0799 36.5047 100.275L35.582 98.9561C36.332 97.573 37.2636 96.4704 38.3768 95.6483C39.4665 94.8135 40.6636 94.3402 41.9679 94.2285C43.2849 94.0933 44.6584 94.4134 46.0884 95.1889C48.1982 96.3329 49.4005 98.0315 49.6955 100.285C49.9905 102.538 49.2736 105.258 47.5448 108.446L40.9092 120.683ZM39.8014 114.167L43.8056 106.783C44.7336 105.071 45.1641 103.606 45.0973 102.387C45.0304 101.168 44.3758 100.221 43.1334 99.5473C41.9144 98.8863 40.7758 98.8603 39.7174 99.4695C38.6356 100.066 37.6307 101.22 36.7027 102.931L32.5078 110.667L28.9564 108.741L32.6555 101.919C33.5199 100.325 33.8996 98.9538 33.7947 97.8048C33.7024 96.6324 33.0937 95.7411 31.9685 95.131C30.8198 94.5081 29.729 94.4778 28.6961 95.04C27.6758 95.5788 26.7335 96.6453 25.8691 98.2393L22.3606 104.709L39.8014 114.167Z" fill="#2B2626"/>
+                <path d="M61.1914 88.5348C59.7328 90.407 58.0863 91.7609 56.252 92.5967C54.413 93.3951 52.5382 93.6753 50.6276 93.4375C48.7333 93.1787 46.9553 92.4019 45.2935 91.1071C43.6106 89.796 42.4144 88.2724 41.7048 86.5364C40.9906 84.763 40.7735 82.9374 41.0534 81.0595C41.3496 79.1606 42.1534 77.3698 43.4645 75.6869C44.7429 74.0461 46.2395 72.8627 47.9545 72.1368C49.6694 71.4109 51.4658 71.1878 53.3437 71.4677C55.2215 71.7476 57.0439 72.5759 58.811 73.9526C58.9792 74.0837 59.1604 74.2417 59.3543 74.4266C59.5647 74.5905 59.7563 74.7568 59.9293 74.9253L48.9894 88.9667L46.3705 86.9262L55.6878 74.9674L55.3036 77.1527C54.3523 76.3777 53.3447 75.9138 52.2806 75.7609C51.2166 75.608 50.1874 75.7358 49.1931 76.1442C48.2151 76.5317 47.3574 77.1987 46.6199 78.1453C45.8659 79.1129 45.4125 80.1288 45.2596 81.1928C45.1231 82.2358 45.2696 83.2627 45.6991 84.2734C46.124 85.2467 46.8412 86.1267 47.851 86.9134L48.482 87.4051C49.4917 88.1918 50.5661 88.6569 51.7049 88.8005C52.8438 88.9441 53.9514 88.7591 55.0277 88.2455C56.104 87.7318 57.0682 86.9281 57.9205 85.8342C58.658 84.8876 59.1745 83.9209 59.47 82.9342C59.7655 81.9475 59.8272 80.9138 59.655 79.8331L63.7318 79.6119C64.0253 81.0576 63.9632 82.5474 63.5456 84.0813C63.1234 85.5778 62.3387 87.0623 61.1914 88.5348Z" fill="#2B2626"/>
+                <path d="M78.7193 69.2779L75.7415 66.1481L74.9045 65.6746L69.6934 60.1975C68.6825 59.1349 67.5825 58.6172 66.3935 58.6441C65.1862 58.6518 63.9353 59.2714 62.6409 60.503C61.7715 61.3301 61.0405 62.2833 60.4477 63.3626C59.8743 64.4234 59.5276 65.4711 59.4076 66.5055L55.4785 65.2194C55.7027 63.7915 56.2376 62.3807 57.0834 60.9871C57.9301 59.5558 58.9716 58.252 60.2081 57.0756C62.4492 54.9433 64.6929 53.8392 66.9394 53.763C69.1868 53.6492 71.3766 54.7128 73.5089 56.9539L82.1388 66.0244L78.7193 69.2779ZM74.0438 74.1128C72.8846 75.2157 71.6865 75.9875 70.4495 76.4282C69.1941 76.8497 67.9941 76.9424 66.8494 76.7065C65.7056 76.4328 64.711 75.8516 63.8654 74.9629C63.0383 74.0935 62.4967 73.1181 62.2407 72.0366C62.004 70.9367 62.166 69.7336 62.7266 68.4272C63.2872 67.1208 64.35 65.7231 65.9149 64.2343L70.4067 59.9606L72.6951 62.3659L68.4642 66.3914C67.2277 67.5678 66.59 68.561 66.551 69.3711C66.4936 70.1619 66.7406 70.8471 67.292 71.4267C67.917 72.0835 68.6741 72.357 69.5633 72.2471C70.4526 72.1372 71.3609 71.6411 72.2882 70.7588C73.1769 69.9133 73.776 68.9568 74.0855 67.8894C74.4143 66.8035 74.3565 65.7175 73.9119 64.6313L76.5884 66.2258C77.1046 67.4646 77.1476 68.7672 76.7175 70.1334C76.3067 71.4813 75.4155 72.8077 74.0438 74.1128Z" fill="#2B2626"/>
+                <path d="M93.0934 58.1136C91.2057 59.5077 89.3906 60.1023 87.648 59.8974C85.8897 59.671 84.3055 58.6032 82.8956 56.6941L71.5134 41.2814L75.5355 38.3111L86.8464 53.6272C87.4484 54.4424 88.1195 54.9247 88.8598 55.0742C89.6215 55.2078 90.3777 54.9974 91.1285 54.443C92.0295 53.7776 92.606 52.9872 92.8581 52.0717L96.0992 54.1037C95.9124 54.8384 95.5471 55.5557 95.0032 56.2557C94.4593 56.9557 93.8227 57.575 93.0934 58.1136ZM73.9571 50.5158L71.5809 47.2981L83.0358 38.8386L85.412 42.0563L73.9571 50.5158Z" fill="#2B2626"/>
+                <path d="M104.868 50.5453C103.321 51.4387 101.718 52.1025 100.06 52.5367C98.411 52.9344 97.0043 53.0847 95.8395 52.9874L95.6021 48.7365C96.7401 48.7876 97.9865 48.653 99.3412 48.3326C100.696 48.0123 101.951 47.5188 103.105 46.852C104.468 46.0653 105.342 45.3138 105.73 44.5976C106.14 43.8681 106.165 43.1916 105.805 42.568C105.511 42.06 105.083 41.799 104.521 41.785C103.945 41.7479 103.283 41.8534 102.533 42.1015C101.783 42.3497 100.959 42.6561 100.061 43.0206C99.1865 43.3719 98.28 43.6952 97.342 43.9905C96.4137 44.2493 95.508 44.3874 94.625 44.4046C93.7286 44.3987 92.8858 44.1925 92.0968 43.7859C91.3077 43.3793 90.6065 42.6449 89.9931 41.5826C89.313 40.4048 89.0612 39.1954 89.2375 37.9542C89.4005 36.69 89.949 35.4802 90.8832 34.325C91.8271 33.1333 93.1304 32.0574 94.7931 31.0973C96.0402 30.3772 97.3787 29.789 98.8089 29.3327C100.239 28.8764 101.516 28.6623 102.641 28.6903L102.879 32.9412C101.694 32.9167 100.599 33.0722 99.5913 33.4075C98.5938 33.7064 97.6562 34.1092 96.7787 34.6159C95.4624 35.376 94.5943 36.139 94.1743 36.9049C93.7775 37.6576 93.7525 38.3341 94.0992 38.9345C94.4192 39.4887 94.8671 39.7844 95.4428 39.8215C96.0185 39.8586 96.6878 39.7646 97.4509 39.5396C98.2139 39.3145 99.0329 39.0264 99.9078 38.6751C100.793 38.2874 101.699 37.9642 102.627 37.7053C103.556 37.4464 104.461 37.3084 105.344 37.2911C106.237 37.2375 107.078 37.414 107.867 37.8206C108.656 38.2271 109.351 38.95 109.951 39.9892C110.617 41.1439 110.851 42.3485 110.652 43.6029C110.475 44.8441 109.904 46.0672 108.937 47.2722C107.956 48.4542 106.6 49.5452 104.868 50.5453Z" fill="#2B2626"/>
+                <path d="M123.649 40.0656L115.715 13.2132L119.82 12.0004L137.35 28.1343L135.202 28.769L140.956 5.75509L145.061 4.5423L153.033 31.3833L148.315 32.7775L142.53 13.34L143.527 13.0453L138.547 32.3269L136.322 32.9843L121.509 19.5513L122.659 19.2113L128.406 38.6601L123.649 40.0656Z" fill="#2B2626"/>
+                <path d="M159.027 31.0253L154.998 1.62012L159.951 0.941302L163.981 30.3465L159.027 31.0253Z" fill="#2B2626"/>
+                <path d="M176.309 0.923055C178.869 0.859653 181.055 1.35233 182.868 2.40108C184.707 3.42251 186.132 4.94769 187.143 6.97661C188.153 9.00554 188.696 11.5262 188.77 14.5386C188.85 17.7376 188.33 20.458 187.212 22.6997C186.121 24.9408 184.563 26.6599 182.538 27.857C180.514 29.0542 178.142 29.6865 175.423 29.7538C174.01 29.7889 172.66 29.6756 171.373 29.414C170.087 29.1525 168.969 28.7267 168.021 28.1367L169.843 24.1703C170.629 24.6577 171.477 24.9968 172.389 25.1876C173.3 25.3517 174.235 25.4219 175.195 25.3982C177.834 25.3328 179.907 24.4678 181.413 22.8034C182.919 21.1389 183.632 18.7205 183.554 15.5481C183.541 15.0416 183.513 14.4555 183.47 13.7897C183.426 13.0972 183.316 12.4064 183.139 11.7172L184.782 13.4371C184.356 14.5413 183.725 15.4772 182.891 16.2448C182.056 16.9857 181.069 17.5569 179.932 17.9586C178.795 18.3602 177.534 18.5782 176.147 18.6125C174.335 18.6574 172.687 18.3515 171.203 17.6947C169.746 17.0105 168.575 16.0393 167.69 14.7808C166.804 13.4956 166.34 11.9867 166.297 10.2539C166.251 8.38778 166.665 6.77705 167.538 5.42167C168.411 4.03963 169.611 2.95624 171.139 2.1715C172.693 1.38609 174.417 0.969945 176.309 0.923055ZM176.69 4.99487C175.624 5.02129 174.683 5.24467 173.866 5.66502C173.049 6.05871 172.409 6.62139 171.947 7.35306C171.511 8.05741 171.305 8.90276 171.33 9.88913C171.366 11.3553 171.901 12.5024 172.936 13.3304C173.97 14.1584 175.34 14.5512 177.046 14.509C178.166 14.4812 179.147 14.2569 179.99 13.8359C180.833 13.3882 181.485 12.7985 181.947 12.0668C182.408 11.3085 182.628 10.4762 182.605 9.56978C182.584 8.69005 182.338 7.90924 181.867 7.22734C181.396 6.51879 180.729 5.96181 179.865 5.55641C179.002 5.15101 177.943 4.96383 176.69 4.99487Z" fill="#2B2626"/>
+                <path d="M202.763 30.7924C200.54 30.5163 198.613 29.8066 196.981 28.6634C195.38 27.497 194.191 26.0327 193.416 24.2703C192.64 22.5079 192.383 20.5815 192.642 18.4909C192.905 16.3738 193.627 14.569 194.806 13.0763C195.989 11.5573 197.498 10.4415 199.334 9.72894C201.195 9.0197 203.237 8.80316 205.46 9.07932C207.525 9.33574 209.285 9.98435 210.741 11.0251C212.227 12.0428 213.28 13.4096 213.899 15.1258L209.812 16.8753C209.302 15.7908 208.614 14.9529 207.747 14.3615C206.906 13.7733 205.956 13.4135 204.898 13.282C203.681 13.1308 202.55 13.259 201.505 13.6666C200.46 14.0743 199.597 14.7464 198.916 15.6829C198.239 16.593 197.815 17.7361 197.644 19.1122C197.473 20.4883 197.603 21.7137 198.034 22.7883C198.468 23.8365 199.141 24.686 200.055 25.3369C200.968 25.9878 202.034 26.3889 203.251 26.5401C204.309 26.6716 205.318 26.5551 206.277 26.1905C207.262 25.8293 208.135 25.1853 208.895 24.2586L212.43 26.9549C211.412 28.4408 210.055 29.5217 208.359 30.1978C206.692 30.8506 204.827 31.0488 202.763 30.7924Z" fill="#2B2626"/>
+                <path d="M213.025 31.8188L213.937 28.4605L227.437 21.1845C228.568 20.5799 229.44 20.0153 230.052 19.4908C230.664 18.9663 231.108 18.4513 231.384 17.9458C231.692 17.4216 231.912 16.915 232.045 16.426C232.381 15.1908 232.215 14.1233 231.547 13.2235C230.887 12.298 229.733 11.6116 228.086 11.1643C226.773 10.8078 225.514 10.7144 224.307 10.884C223.126 11.0607 222.02 11.5202 220.99 12.2627L218.211 8.60647C219.651 7.47767 221.363 6.7684 223.348 6.47867C225.366 6.1702 227.482 6.31652 229.695 6.91764C231.651 7.44887 233.262 8.23188 234.528 9.26666C235.828 10.2827 236.706 11.4746 237.163 12.8423C237.647 14.2171 237.672 15.7022 237.238 17.2977C237 18.1727 236.647 19.0162 236.178 19.8283C235.716 20.6146 235.033 21.3964 234.131 22.1739C233.229 22.9513 232 23.7641 230.443 24.6124L218.837 30.8691L218.309 28.6945L234.097 32.9828L232.944 37.2289L213.025 31.8188Z" fill="#2B2626"/>
+                <path d="M234.495 37.7878L235.729 34.8787L254.062 25.3627L254.237 27.3054L241.496 21.9002L243.058 18.2179L259.481 25.1853L258.247 28.0944L239.915 37.6104L239.666 35.6364L253.033 41.3072L251.471 44.9895L234.495 37.7878Z" fill="#2B2626"/>
+                <path d="M288.674 42.6307C290.089 43.5854 291.151 44.7044 291.862 45.9879C292.594 47.2864 292.882 48.7191 292.725 50.2862C292.583 51.8312 291.908 53.499 290.7 55.2894L283.854 65.4355L279.709 62.6388L286.198 53.0232C287.257 51.4538 287.704 50.051 287.541 48.8149C287.378 47.5789 286.655 46.5283 285.373 45.6631C284.467 45.0516 283.526 44.7061 282.55 44.6266C281.596 44.5621 280.66 44.7825 279.74 45.2876C278.842 45.8077 277.99 46.6646 277.185 47.8583L271.121 56.8439L266.977 54.0471L273.465 44.4315C274.524 42.8621 274.972 41.4593 274.809 40.2233C274.646 38.9872 273.923 37.9366 272.641 37.0715C271.735 36.4599 270.794 36.1144 269.818 36.035C268.864 35.9705 267.927 36.1908 267.007 36.696C266.109 37.2161 265.258 38.0729 264.452 39.2666L258.389 48.2522L254.244 45.4554L266.192 27.7495L270.138 30.412L266.961 35.1203L267.204 33.2579C268.577 32.5112 270.028 32.2197 271.558 32.3836C273.11 32.5624 274.616 33.1441 276.075 34.1285C277.732 35.2473 278.893 36.6257 279.557 38.264C280.243 39.9172 280.226 41.7069 279.505 43.6333L278.261 41.9733C279.73 41.0348 281.397 40.6152 283.26 40.7144C285.123 40.8136 286.928 41.4524 288.674 42.6307Z" fill="#2B2626"/>
+                <path d="M281.03 69.2203L316.65 51.1848L319.881 54.2878L284.262 72.3233L281.03 69.2203Z" fill="#2B2626"/>
+                <path d="M304.979 88.7901L308.317 86.0475L308.85 85.2471L314.691 80.4476C315.825 79.5165 316.421 78.4571 316.48 77.2693C316.56 76.0645 316.033 74.772 314.899 73.3915C314.137 72.4644 313.24 71.666 312.206 70.9965C311.19 70.3475 310.17 69.9256 309.147 69.7307L310.715 65.9055C312.123 66.2328 313.491 66.8688 314.82 67.8136C316.186 68.762 317.411 69.8955 318.494 71.2141C320.458 73.6041 321.396 75.9222 321.309 78.1683C321.259 80.418 320.039 82.5248 317.649 84.4886L307.976 92.4369L304.979 88.7901ZM300.497 83.7757C299.481 82.5395 298.798 81.2885 298.449 80.0228C298.12 78.7401 298.114 77.5365 298.433 76.4119C298.789 75.291 299.441 74.3412 300.388 73.5625C301.316 72.8007 302.328 72.3314 303.425 72.1546C304.539 71.9984 305.727 72.2474 306.99 72.9014C308.252 73.5555 309.569 74.717 310.94 76.3858L314.876 81.1762L312.311 83.2839L308.603 78.7717C307.52 77.4531 306.575 76.7449 305.77 76.6471C304.986 76.5324 304.284 76.729 303.666 77.2369C302.966 77.8125 302.638 78.5477 302.683 79.4426C302.728 80.3375 303.157 81.2794 303.97 82.2684C304.748 83.2162 305.659 83.8831 306.701 84.2694C307.76 84.6762 308.847 84.6974 309.963 84.3329L308.178 86.8865C306.905 87.3113 305.603 87.2596 304.272 86.7314C302.957 86.2238 301.699 85.2386 300.497 83.7757Z" fill="#2B2626"/>
+                </svg>
+              <img class="latest-products__img" src="/assets/img/headphones.png" alt="Наушники">
+              <strong class="latest-products__price">
+                $50
+              </strong>
+            </div>
+            <div class="latest-products__star-column latest-products__star-column--bottom">
+              <div class="latest-products__star"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="featured-products">
+        <div class="container featured-products__container">
+          <div class="featured-products__content">
+            <h2 class="section-title featured-products__title">
+              Our Featured Products
+            </h2>
+            <p class="section-txt featured-products__txt">
+              Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product
+            </p>
+            <div class="featured-products__buttons">
+              <a href="#" class="btn featured-products__btn">
+                Add to cart
+              </a>
+              <a href="#" class="btn btn--transparent featured-products__btn">
+                View more
+              </a>
+            </div>
+          </div>
+          <div class="featured-products__images">
+            <strong class="featured-products__images-title outline-txt">
+              Apple wireless Airpod
+            </strong>
+            <ul class="featured-products__list">
+              <li class="featured-products__item">
+                <img src="/assets/img/featured-products/image1.png" alt="">
+              </li>
+              <li class="featured-products__item">
+                <img class="image-top" src="/assets/img/featured-products/image2.png" alt="">
+                <span class="featured-products__price">
+                  Price:
+                  <strong class="price">
+                    $45 .99
+                  </strong>
+                </span>
+              </li>
+              <li class="featured-products__item">
+                <img src="/assets/img/featured-products/image3.png" alt="">
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+      <section class="top-sellers">
+        <div class="top-sellers__container">
+          <div class="container top-sellers__wrap">
+            <h2 class="section-title top-sellers__title">
+              Top top-sellers
+            </h2>
+          </div>
+          <div class="top-sellers__tabs tabs">
+            <ul class="tabs__list">
+              <li class="tabs__item">
+                <button data-path="one" class="tabs__btn tabs__btn--active">   
+                  Top Picks             
+                </button>
+              </li>
+              <li class="tabs__item">
+                <button data-path="two" class="tabs__btn">   
+                  Top Watchers             
+                </button>
+              </li>
+            </ul>
+            <div data-target="one" class="tabs__content tabs__content--active">
+              <div class="slider">
+                <div class="slider__item">
+                  <div class="slider__card card ">
+                    <div class="card__wrap card__wrap--green">
+                      <img class="card__img" src="/assets/img/slider/01.png" alt="">
+                      <div class="card__content">
+                        <strong class="card__title">
+                          Boat Rockerz 333
+                        </strong>
+                        <div class="card__rating rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating">
+                              <input type="radio" class="rating__item" value="2" name="rating">
+                              <input type="radio" class="rating__item" value="3" name="rating">
+                              <input type="radio" class="rating__item" value="4" name="rating">
+                              <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                            <div class="rating__value">5</div>
+                          </div>
+                          <span class="rating__review">75 reviews</span>
+                        </div>
+                        <strong class="price">$20</strong>
+                      </div>
+                    </div>
+                    <button class="btn btn--card-btn">Add to cart</button>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__card card ">
+                    <div class="card__wrap card__wrap--blue">
+                      <img class="card__img" src="/assets/img/slider/02.png" alt="">
+                      <div class="card__content">
+                        <strong class="card__title">
+                          Boat Rockerz 333
+                        </strong>
+                        <div class="card__rating rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating">
+                              <input type="radio" class="rating__item" value="2" name="rating">
+                              <input type="radio" class="rating__item" value="3" name="rating">
+                              <input type="radio" class="rating__item" value="4" name="rating">
+                              <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                            <div class="rating__value">5</div>
+                          </div>
+                          <span class="rating__review">75 reviews</span>
+                        </div>
+                        <strong class="price">$20</strong>
+                      </div>
+                    </div>
+                    <button class="btn btn--card-btn">Add to cart</button>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__card card ">
+                    <div class="card__wrap card__wrap--violet">
+                      <img class="card__img" src="/assets/img/slider/03.png" alt="">
+                      <div class="card__content">
+                        <strong class="card__title">
+                          Boat Rockerz 333
+                        </strong>
+                        <div class="card__rating rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating">
+                              <input type="radio" class="rating__item" value="2" name="rating">
+                              <input type="radio" class="rating__item" value="3" name="rating">
+                              <input type="radio" class="rating__item" value="4" name="rating">
+                              <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                            <div class="rating__value">5</div>
+                          </div>
+                          <span class="rating__review">75 reviews</span>
+                        </div>
+                        <strong class="price">$20</strong>
+                      </div>
+                    </div>
+                    <button class="btn btn--card-btn">Add to cart</button>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__card card ">
+                    <div class="card__wrap card__wrap--blue-violet">
+                      <img class="card__img" src="/assets/img/slider/04.png" alt="">
+                      <div class="card__content">
+                        <strong class="card__title">
+                          Boat Rockerz 333
+                        </strong>
+                        <div class="card__rating rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating">
+                              <input type="radio" class="rating__item" value="2" name="rating">
+                              <input type="radio" class="rating__item" value="3" name="rating">
+                              <input type="radio" class="rating__item" value="4" name="rating">
+                              <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                            <div class="rating__value">5</div>
+                          </div>
+                          <span class="rating__review">75 reviews</span>
+                        </div>
+                        <strong class="price">$20</strong>
+                      </div>
+                    </div>
+                    <button class="btn btn--card-btn">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-target="two" class="tabs__content">
+              <div class="slider">
+                <div class="slider__item">
+                  <div class="slider__card card ">
+                    <div class="card__wrap card__wrap--blue">
+                      <img class="card__img" src="/assets/img/slider/02.png" alt="">
+                      <div class="card__content">
+                        <strong class="card__title">
+                          Boat Rockerz 333
+                        </strong>
+                        <div class="card__rating rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating">
+                              <input type="radio" class="rating__item" value="2" name="rating">
+                              <input type="radio" class="rating__item" value="3" name="rating">
+                              <input type="radio" class="rating__item" value="4" name="rating">
+                              <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                            <div class="rating__value">5</div>
+                          </div>
+                          <span class="rating__review">75 reviews</span>
+                        </div>
+                        <strong class="price">$20</strong>
+                      </div>
+                    </div>
+                    <button class="btn btn--card-btn">Add to cart</button>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__card card ">
+                    <div class="card__wrap card__wrap--green">
+                      <img class="card__img" src="/assets/img/slider/01.png" alt="">
+                      <div class="card__content">
+                        <strong class="card__title">
+                          Boat Rockerz 333
+                        </strong>
+                        <div class="card__rating rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating">
+                              <input type="radio" class="rating__item" value="2" name="rating">
+                              <input type="radio" class="rating__item" value="3" name="rating">
+                              <input type="radio" class="rating__item" value="4" name="rating">
+                              <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                            <div class="rating__value">5</div>
+                          </div>
+                          <span class="rating__review">75 reviews</span>
+                        </div>
+                        <strong class="price">$20</strong>
+                      </div>
+                    </div>
+                    <button class="btn btn--card-btn">Add to cart</button>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__card card ">
+                    <div class="card__wrap card__wrap--blue-violet">
+                      <img class="card__img" src="/assets/img/slider/04.png" alt="">
+                      <div class="card__content">
+                        <strong class="card__title">
+                          Boat Rockerz 333
+                        </strong>
+                        <div class="card__rating rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating">
+                              <input type="radio" class="rating__item" value="2" name="rating">
+                              <input type="radio" class="rating__item" value="3" name="rating">
+                              <input type="radio" class="rating__item" value="4" name="rating">
+                              <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                            <div class="rating__value">5</div>
+                          </div>
+                          <span class="rating__review">75 reviews</span>
+                        </div>
+                        <strong class="price">$20</strong>
+                      </div>
+                    </div>
+                    <button class="btn btn--card-btn">Add to cart</button>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__card card ">
+                    <div class="card__wrap card__wrap--violet">
+                      <img class="card__img" src="/assets/img/slider/03.png" alt="">
+                      <div class="card__content">
+                        <strong class="card__title">
+                          Boat Rockerz 333
+                        </strong>
+                        <div class="card__rating rating rating--set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating">
+                              <input type="radio" class="rating__item" value="2" name="rating">
+                              <input type="radio" class="rating__item" value="3" name="rating">
+                              <input type="radio" class="rating__item" value="4" name="rating">
+                              <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                            <div class="rating__value">5</div>
+                          </div>
+                          <span class="rating__review">75 reviews</span>
+                        </div>
+                        <strong class="price">$20</strong>
+                      </div>
+                    </div>
+                    <button class="btn btn--card-btn">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="/js/slick.min.js"></script>
+  <script src="/js/sript.js"></script>
+</body>
+</html>

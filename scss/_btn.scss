@@ -1,0 +1,51 @@
+.btn {
+  min-height: 70px;
+  width: 263px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #fff;
+  background-color: #10b981;
+  border-radius: 10px;
+  
+  &:hover {
+    background-color: #10b981aa;
+  }
+
+  &:focus {
+    background-color: #10b981aa;
+  }
+
+  &:active {
+    background-color:  #10b981d5;
+  }
+
+  &--transparent {
+    width: auto;
+    line-height: 1.66;
+    background-color: transparent;
+
+    &:hover {
+      color: #10b981;
+      background-color: transparent;
+    }
+  
+    &:focus {
+      color: #10b981;
+      background-color: transparent;
+    }
+  
+    &:active {
+      color: #10b981aa;
+      background-color: transparent;
+    }
+  }
+
+  &--card-btn {
+    width: 100%;
+  }
+}

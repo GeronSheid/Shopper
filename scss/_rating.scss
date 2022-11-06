@@ -1,0 +1,59 @@
+.rating {
+  display: flex;
+
+  &__body {
+    position: relative;
+    margin: 0 14px 0 0;
+
+    &::before {
+      content: "★★★★★";
+      display: block;
+      color: #888888
+    }
+  }
+
+  &__active {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    
+    &::before {
+      content: "★★★★★";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #c00c00;
+    }
+  }
+
+  &__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  &__value {
+    display: none;
+  }
+
+  &__review {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 3.18;
+    color: #888888;
+  }
+}
