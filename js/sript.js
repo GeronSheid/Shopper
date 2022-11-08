@@ -1,13 +1,42 @@
 //Slick slider
 
 $(document).ready(function(){
-  $('.slider').slick({
+  $('.top-sellers__slider').slick({
     infinit: true,
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
   });
 });
+
+$('.top-sellers .tabs__btn').on('click', function(){
+  $('.top-sellers .tabs__btn').removeClass('tabs__btn--active');
+  $(this).addClass('tabs__btn--active');
+  let filterClass = $(this).data('filter');
+  console.log(filterClass);
+  $('.top-sellers__slider').slick('slickUnfilter');
+  $('.top-sellers__slider').slick('slickFilter', filterClass);
+})
+
+
+$(document).ready(function(){
+  $('.trending-earphones__slider').slick({
+    infinit: true,
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
+});
+
+$('.trending-earphones .tabs__btn').on('click', function(){
+  $('.trending-earphones .tabs__btn').removeClass('tabs__btn--active');
+  $(this).addClass('tabs__btn--active');
+  let filterClass = $(this).data('filter');
+  console.log(filterClass);
+  $('.trending-earphones__slider').slick('slickUnfilter');
+  $('.trending-earphones__slider').slick('slickFilter', filterClass);
+})
+
 
 const ratings = document.querySelectorAll('.rating');
 
@@ -62,24 +91,3 @@ function initRatings() {
   }
 }
 
-const tabsButtons = document.querySelectorAll('.tabs__btn');
-const tabsContent = document.querySelectorAll('.tabs__content');
-
-tabsButtons.forEach((element) => {
-  element.addEventListener('click', (e) => {
-    const path = e.currentTarget.dataset.path;
-
-    tabsButtons.forEach((btn) => {
-      btn.classList.remove('tabs__btn--active');
-    });
-    
-    e.currentTarget.classList.add('tabs__btn--active');
-
-    tabsContent.forEach((element) => {
-      element.classList.remove('tabs__content--active');
-    });
-
-    document.querySelector(`[data-target="${path}"]`).classList.add('tabs__content--active')
-    $('.slider').slick('refresh');
-  });
-});
