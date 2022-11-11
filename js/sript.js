@@ -37,6 +37,15 @@ $('.trending-earphones .tabs__btn').on('click', function(){
   $('.trending-earphones__slider').slick('slickFilter', filterClass);
 })
 
+$(document).ready(function(){
+  $('.new-launches__slider').slick({
+    infinit: true,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  })
+})
+
 
 const ratings = document.querySelectorAll('.rating');
 
